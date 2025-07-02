@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Courses - ICST</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; }
+    header { background: #003366; color: #fff; text-align: center; padding: 30px 20px; }
+    nav { background: #0055a5; text-align: center; padding: 15px; }
+    nav a { color: #fff; margin: 0 20px; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #ffdd00; }
+    section { padding: 40px 20px; max-width: 800px; margin: 0 auto; }
+    section h2 { color: #003366; text-align: center; margin-bottom: 20px; }
+    ul { list-style: none; padding: 0; }
+    ul li { background: #f4f4f4; margin-bottom: 10px; padding: 15px; border-radius: 5px; }
+    form { background: #f4f4f4; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px #ccc; }
+    form label { display: block; margin-top: 15px; font-weight: bold; color: #003366; }
+    form input, form select, form textarea {
+      width: 100%; padding: 10px; margin-top: 5px;
+      border: 1px solid #ccc; border-radius: 5px;
+      font-size: 1rem;
+    }
+    form button {
+      margin-top: 20px; padding: 12px 20px;
+      background: #003366; color: white;
+      border: none; border-radius: 5px;
+      font-size: 1rem; cursor: pointer;
+    }
+    form button:hover {
+      background: #0055a5;
+    }
+    footer { background: #003366; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .course-card {
+      background: #f4f4f4;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px #ccc;
+      padding: 18px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .course-card:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 4px 16px #bbb;
+    }
+    .course-card img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 14px;
+    }
+    .course-card strong {
+      display: block;
+      font-size: 1.15rem;
+      color: #003366;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://icst.edu.lk/wp-content/uploads/2023/11/ICST-Logo-Final@4x-1.png" alt="" />
+    <h1>Our Courses</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="student-life.html">Student Life</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html">Signup</a>
+  </nav>
+
+  <section>
+    <h2>Explore Our Programs</h2>
+    <div class="courses-grid">
+      <div class="course-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="ACCA" />
+        <strong>ACCA</strong>
+        <p>Association of Chartered Certified Accountants: Global professional accounting qualification.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721297.png" alt="HDIT" />
+        <strong>HDIT</strong>
+        <p>Higher Diploma in Information Technology: Comprehensive IT skills for modern workplaces.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png" alt="HDQS" />
+        <strong>HDQS</strong>
+        <p>Higher Diploma in Quantity Surveying: Training in construction cost management and surveying.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="BAIT" />
+        <strong>BAIT</strong>
+        <p>Bachelor of Arts in Information Technology: In-depth study of IT concepts and applications.</p>
+      </div>
+    </div>
+  </section>  
+  <section>
+    <h2>Course Application Form</h2>
+    <form action="#" method="post">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Contact Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="course">Select Course</label>
+      <select id="course" name="course" required>
+        <option value="">-- Select a Course --</option>
+        <option value="acca">ACCA</option>
+        <option value="hdit">HDIT</option>
+        <option value="hdqs">HDQS</option>
+        <option value="bait">BAIT</option>
+      </select>
+
+      <label for="message">Why do you want to join?</label>
+      <textarea id="message" name="message" rows="5" placeholder="Tell us more about your goals..." required></textarea>
+
+      <button type="submit">Apply Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ICST. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ICST</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; }
+    header { 
+      background: #003366; 
+      color: #fff; 
+      text-align: center; /* Center text */
+      padding: 30px 20px; 
+      display: flex; 
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;   /* Center horizontally */
+      gap: 10px;
+    }
+    header img { 
+      /* display: none; */ /* Remove or comment out this line to show the image */
+      max-width: 380px;
+      height: auto;
+      margin-bottom: 0;
+      margin-right: 0;
+      display: block;
+    }
+    header .header-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; /* Center text vertically in header-content */
+    }
+    nav { background: #0055a5; text-align: center; padding: 15px; }
+    nav a { color: #fff; margin: 0 20px; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #ffdd00; }
+    .hero {
+      background: #eee;
+      background-size: cover;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      height: 400px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .hero > div {
+      flex: 1;
+    }
+    .hero h2 { font-size: 2em; margin-bottom: 20px; color: #003366; }
+    .hero a.button { background: #003366; color: #fff; padding: 12px 25px; text-decoration: none; border-radius: 5px; }
+    .hero a.button:hover { background: #0055a5; }
+    .nav-arrow {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      margin: 0 20px;
+    }
+    .nav-arrow.back {
+      /* Already inherits width, height, cursor, margin from .nav-arrow */
+      filter: drop-shadow(2px 2px 4px #888); /* Adds a subtle shadow */
+      transition: transform 0.2s;
+    }
+    .nav-arrow.back:hover {
+      transform: scale(1.15) rotate(-10deg); /* Slightly enlarges and rotates on hover */
+    }
+    .back {
+      order: 0;
+    }
+    .forward {
+      order: 2;
+    }
+    footer { background: #003366; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      margin-left: 24px;
+      background: #fff;
+      border-radius: 20px;
+      padding: 2px 10px;
+      box-shadow: 0 1px 4px #00336622;
+    }
+    .search-bar input[type="text"] {
+      border: none;
+      outline: none;
+      padding: 7px 8px;
+      border-radius: 20px;
+      font-size: 1rem;
+      background: transparent;
+      color: #003366;
+      width: 140px;
+      transition: width 0.3s;
+    }
+    .search-bar input[type="text"]:focus {
+      width: 200px;
+    }
+    .search-bar button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0 4px;
+    }
+    .search-bar img {
+      width: 20px;
+      height: 20px;
+      filter: invert(30%) sepia(100%) saturate(500%) hue-rotate(180deg);
+    }
+    @media (max-width: 700px) {
+      .search-bar input[type="text"] {
+        width: 80px;
+      }
+      .search-bar input[type="text"]:focus {
+        width: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header style="display: flex; flex-direction: row; align-items: center; justify-content: center; background: #003366; color: #fff; padding: 30px 20px;">
+    <div class="header-content" style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;">
+      <h1 style="margin:0;">ICST UNIVERSITY PARK</h1>
+      <p style="margin:0;">Empowering Future Coders</p>
+    </div>
+  </header>
+
+  <nav style="display: flex; align-items: center; background: #0055a5; padding: 15px 30px;">
+    <img src="https://icst.edu.lk/wp-content/uploads/2023/11/ICST-Logo-Final@4x-1.png" alt="" style="max-width: 70px; height: auto; margin-right: 28px; display: flex;" />
+    <div style="flex:1; display: flex; align-items: center; justify-content: center;">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="student-life.html">Student Life</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Signup</a>
+    </div>
+    <!-- Social Media Icons -->
+    <div style="display: flex; align-items: center; gap: 12px; margin-left: 20px;">
+      <a href="https://www.tiktok.com/@raslanriz/video/7514583954394008839?is_from_webapp=1&sender_device=pc" target="_blank" title="TikTok" style="display:inline-block;">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" style="width:28px; height:28px; filter:invert(1);" />
+      </a>
+      <a href="https://www.instagram.com/icst_universitypark/?hl=en" target="_blank" title="Instagram" style="display:inline-block;">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="width:28px; height:28px; filter:invert(1);" />
+      </a>
+      <a href="https://www.facebook.com/icst" target="_blank" title="Facebook" style="display:inline-block;">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" style="width:28px; height:28px; filter:invert(1);" />
+      </a>
+    </div>
+    <!-- Search Bar -->
+    <form class="search-bar" onsubmit="event.preventDefault(); alert('Searching for: ' + this.query.value);">
+      <input type="text" name="query" placeholder="Search..." aria-label="Search" />
+      <button type="submit" title="Search">
+        <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search" />
+      </button>
+    </form>
+  </nav>
+
+  <div class="hero" style="
+    background: url('https://icst.edu.lk/wp-content/uploads/elementor/thumbs/S01-qgs9uohdwv5kpfxy6xaek0xntk9e14v2pw0rnpn6c0.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  ">
+    <div>
+      <h2 style="color: #fff; text-shadow: 2px 2px 8px #333;">Welcome to ICST</h2>
+      <p style="color: #fff; text-shadow: 1px 1px 6px #333;">TOGETHER, LET'S EMBARK ON A JOURNEY OF LEARNING </p>
+      <a href="signup.html" class="button">Get Started</a>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 ICST. All rights reserved.</p>
+  </footer>
+</body>
+</html>

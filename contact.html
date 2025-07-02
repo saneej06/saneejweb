@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ICST</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header img {
+      max-width: 120px;
+      margin-bottom: 15px;
+    }
+
+    nav {
+      background: #0055a5;
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffdd00;
+    }
+
+    .hero {
+      background: url('images/global-institute-banner.jpeg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      background-color: #ffcc00;
+      color: #003366;
+      padding: 12px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #e6b800;
+    }
+
+    .contact-section {
+      background-color: #f5f5f5;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      font-size: 2.5em;
+      color: #003366;
+      margin-bottom: 40px;
+    }
+
+    .contact-box {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .contact-item {
+      background: white;
+      border-radius: 8px;
+      padding: 20px 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      min-width: 250px;
+    }
+
+    .contact-item h4 {
+      color: #0055a5;
+      margin-bottom: 10px;
+    }
+
+    .contact-item p {
+      font-size: 1em;
+      color: #333;
+    }
+
+    footer {
+      background: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://icst.edu.lk/wp-content/uploads/2023/11/ICST-Logo-Final@4x-1.png" alt="" />
+    <h1>ICST UNIVERSITY PARK</h1>
+    <p>Empowering Future Coders</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="student-life.html">Student Life</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html">Signup</a>
+  </nav>
+
+
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <div class="contact-box">
+      <div class="contact-item">
+        <h4>📍 Address</h4>
+        <p>ICST, University Park</p>
+      </div>
+      <div class="contact-item">
+        <h4>📞 Phone</h4>
+        <p>+94 743 444 444<br>+94 112 345 678</p>
+      </div>
+      <div class="contact-item">
+        <h4>✉️ Email</h4>
+        <p>admissions@icst.edu.lk<br>info@icst.edu.lk</p>
+      </div>
+      <div class="contact-item">
+        <h4>⏰ Open Hours</h4>
+        <p>
+          <strong>Monday - Friday:</strong> 8:30 AM – 5:30 PM<br>
+          <strong>Saturday:</strong> 9:00 AM – 1:00 PM<br>
+          <strong>Sunday:</strong> Closed<br>
+          <strong>Public Holidays:</strong> Closed
+        </p>
+      </div>
+    </div>
+    <div style="margin-top:40px;">
+      <h3 style="color:#003366;">Find Us on Google Maps</h3>
+      <iframe
+        src="https://www.google.com/maps?q=ICST+University+Park&output=embed"
+        width="350"
+        height="200"
+        style="border:0; border-radius:8px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="ICST University Park Location"
+      ></iframe>
+    </div>
+    <div style="margin-top:40px;">
+      <h3 style="color:#003366;">Quick Contact Form</h3>
+      <form style="max-width:400px;margin:0 auto;text-align:left;">
+        <label for="name" style="font-weight:bold;color:#0055a5;">Name</label>
+        <input type="text" id="name" name="name" required style="width:100%;padding:8px;margin-bottom:10px;border-radius:4px;border:1px solid #ccc;">
+        <label for="email" style="font-weight:bold;color:#0055a5;">Email</label>
+        <input type="email" id="email" name="email" required style="width:100%;padding:8px;margin-bottom:10px;border-radius:4px;border:1px solid #ccc;">
+        <label for="message" style="font-weight:bold;color:#0055a5;">Message</label>
+        <textarea id="message" name="message" rows="4" required style="width:100%;padding:8px;border-radius:4px;border:1px solid #ccc;"></textarea>
+        <button type="submit" style="margin-top:10px;padding:10px 20px;background:#003366;color:#fff;border:none;border-radius:4px;cursor:pointer;">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ICST. All rights reserved</p>
+  </footer>
+
+</body>
+</html>
